@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu &amp; Experiences — ÉLAN Café</title><link href="css/style.css" rel="stylesheet"/></head><body>
+<header class="header"><div class="container nav">
+<a class="logo" href="index.html">ÉLAN<small>CAFÉ · COFFEE · BAKERY</small></a>
+<nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="services.html">Menu &amp; Services</a><a href="contact.html">Contact</a></nav>
+<a class="btn" href="contact.html#reserve">Reserve a Table</a></div></header>
+<section class="page-hero"><div class="container"><p class="eyebrow">More than a café</p>
+<h1>Make something<br/>of your visit.</h1>
+<p>Come for coffee. Stay for the experience — create a drink, try a baking workshop or make your own little café ritual.</p></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><p class="eyebrow">ÉLAN experiences</p><h2>Play with your<br/>coffee.</h2></div>
+<p>We built a few hands-on experiences so your visit can be more than simply ordering from a menu.</p></div>
+<div class="experience-grid">
+<div class="experience-card"><div class="experience-icon">☕</div><h3>Build Your Drink</h3><p>Choose your base, milk, flavour and topping. See your custom drink come to life.</p><a class="btn light" href="#creator">Create a drink →</a></div>
+<div class="experience-card"><div class="experience-icon">🥐</div><h3>Bake With Us</h3><p>Join a small-group pastry session and learn how we make a signature ÉLAN bake.</p><a class="btn light" href="#workshops">View workshops →</a></div>
+<div class="experience-card"><div class="experience-icon">🎨</div><h3>Coffee Art Hour</h3><p>Try latte art, learn pouring basics and leave with your own café-style cup.</p><a class="btn light" href="#workshops">Join a session →</a></div>
+</div></div></section>
+<section class="section lab" id="creator"><div class="container lab-layout">
+<div class="lab-copy"><p class="eyebrow">ÉLAN drink lab</p><h2>Create your<br/>own drink.</h2>
+<p>Choose each layer of your drink. The cup preview changes instantly so you can see what you're creating before you order it.</p>
+<p class="lab-note">Your creation is a website experience — take the recipe to the counter and our barista can make it for you.</p></div>
+<div class="builder">
+<div class="builder-head"><h3>Your recipe</h3><span class="price-live" id="livePrice">₹190</span></div>
+<div class="builder-step"><label>01 · Base</label><div class="choice-row">
+<button class="choice selected" data-color="#75452f" data-name="Espresso" data-price="190" data-type="base">Espresso</button>
+<button class="choice" data-color="#563628" data-name="Cold Brew" data-price="200" data-type="base">Cold Brew</button>
+<button class="choice" data-color="#96764e" data-name="Matcha" data-price="210" data-type="base">Matcha</button></div></div>
+<div class="builder-step"><label>02 · Milk</label><div class="choice-row">
+<button class="choice selected" data-foam="#f1ddc5" data-name="Whole Milk" data-price="0" data-type="milk">Whole Milk</button>
+<button class="choice" data-foam="#e8d0ae" data-name="Oat Milk" data-price="30" data-type="milk">Oat Milk</button>
+<button class="choice" data-foam="#e4c59f" data-name="Almond Milk" data-price="30" data-type="milk">Almond</button></div></div>
+<div class="builder-step"><label>03 · Flavour</label><div class="choice-row">
+<button class="choice selected" data-name="Vanilla" data-price="20" data-topping="•" data-type="flavour">Vanilla</button>
+<button class="choice" data-name="Caramel" data-price="25" data-topping="••" data-type="flavour">Caramel</button>
+<button class="choice" data-name="Hazelnut" data-price="25" data-topping="•••" data-type="flavour">Hazelnut</button>
+<button class="choice" data-name="None" data-price="0" data-topping="" data-type="flavour">None</button></div></div>
+<div class="builder-step"><label>04 · Finish</label><div class="choice-row">
+<button class="choice selected" data-name="Cocoa Dust" data-price="15" data-topping="✦" data-type="finish">Cocoa Dust</button>
+<button class="choice" data-name="Whipped Cream" data-price="25" data-topping="✦✦" data-type="finish">Whipped Cream</button>
+<button class="choice" data-name="Cinnamon" data-price="10" data-topping="✦" data-type="finish">Cinnamon</button></div></div>
+<div class="drink-stage realistic-stage">
+<div class="stage-topline"><span>LIVE PREVIEW</span><span class="stage-pulse">● FRESHLY BUILT</span></div>
+<div class="counter-glow"></div>
+<div class="cup-wrap realistic-cup-wrap">
+<div class="cup-shadow"></div>
+<div class="glass-cup premium-cup" id="drinkCup">
+<div class="glass-reflection"></div>
+<div class="liquid-back"></div>
+<div class="drink-liquid"></div>
+<div class="milk-layer"></div>
+<div class="syrup-swirl"></div>
+<div class="ice ice-a"></div>
+<div class="ice ice-b"></div>
+<div class="ice ice-c"></div>
+<div class="foam-layer"></div>
+<div class="foam-bubbles"><i></i><i></i><i></i><i></i></div>
+<div class="topping" id="drinkTopping">✦</div>
+<div class="cup-logo">ÉLAN</div>
+</div>
+<div class="glass-base"></div>
+</div>
+<div class="drink-meta">
+<span>YOUR CREATION</span>
+<strong class="drink-name" id="drinkName">Vanilla Espresso</strong>
+<small id="drinkDetail">Espresso · Whole Milk · Cocoa Dust</small>
+<b id="previewPrice">₹225</b>
+</div>
+<div class="preview-stamp">HANDCRAFTED<br/><strong>JUST FOR YOU</strong></div>
+</div>
+<div class="creator-result" id="creatorResult"></div>
+<button class="btn" id="saveDrink" style="margin-top:15px;width:100%">Save my creation →</button>
+</div></div></section>
+<section class="special-menu">
+<div class="container">
+<div class="special-head">
+<div><p class="eyebrow">ÉLAN favourites</p><h2>The ones people<br/>come back for.</h2></div>
+<p>Our most-loved plates and drinks, chosen by guests, our baristas and our kitchen team.</p>
+</div>
+<div class="special-grid">
+<article class="special-card favourite">
+<div class="special-badge">♥ EVERYONE'S FAVOURITE</div>
+<div class="special-art latte-art"><span>♡</span></div>
+<div class="special-info"><small>01 · SIGNATURE COFFEE</small><h3>ÉLAN Vanilla Latte</h3><p>Double espresso, house vanilla and silky microfoam.</p><strong>₹220</strong></div>
+</article>
+<article class="special-card chef">
+<div class="special-badge">✦ CHEF'S FAVOURITE</div>
+<div class="special-art croissant-art">🥐</div>
+<div class="special-info"><small>02 · PASTRY KITCHEN</small><h3>Almond Croissant</h3><p>Buttery laminated layers, almond frangipane and toasted almonds.</p><strong>₹190</strong></div>
+</article>
+<article class="special-card new">
+<div class="special-badge">NEW · ÉLAN PICK</div>
+<div class="special-art matcha-art"><span>抹茶</span></div>
+<div class="special-info"><small>03 · COLD FAVOURITE</small><h3>Strawberry Matcha</h3><p>Earthy matcha layered with strawberry and chilled milk.</p><strong>₹260</strong></div>
+</article>
+<article class="special-card brunch">
+<div class="special-badge">★ BRUNCH FAVOURITE</div>
+<div class="special-art toast-art">🥑</div>
+<div class="special-info"><small>04 · ALL DAY</small><h3>Avocado Sourdough Toast</h3><p>Avocado, feta, lemon and chilli on toasted sourdough.</p><strong>₹280</strong></div>
+</article>
+</div>
+</div>
+</section>
+<section class="section menu-section" id="menu">
+<div class="container">
+<div class="section-head menu-heading">
+<div>
+<p class="eyebrow">The ÉLAN menu</p>
+<h2>More to sip.<br/>More to savour.</h2>
+</div>
+<p>From slow mornings to late-evening cravings — espresso, iced favourites, tea, bakery, breakfast, savoury plates and something sweet.</p>
+</div>
+<div class="menu-category"><span>01</span><h3>Espresso Bar</h3><em>Classic coffee, made properly.</em></div>
+<div class="menu-grid rich-menu">
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=240&q=85" alt="ÉLAN Vanilla Latte" loading="lazy"><span></span></div><div class="menu-copy"><small>HOT · SIGNATURE</small><h3>ÉLAN Vanilla Latte</h3><p>Double espresso · vanilla · silky steamed milk</p></div><span class="menu-buy"><span class="price">₹220</span><button class="add-item" data-name="ÉLAN Vanilla Latte" data-price="220" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=240&q=85" alt="Classic Cappuccino" loading="lazy"><span></span></div><div class="menu-copy"><small>HOT · CLASSIC</small><h3>Classic Cappuccino</h3><p>Double espresso · velvety microfoam · cocoa</p></div><span class="menu-buy"><span class="price">₹190</span><button class="add-item" data-name="Classic Cappuccino" data-price="190" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=240&q=85" alt="Flat White" loading="lazy"><span></span></div><div class="menu-copy"><small>HOT · BOLD</small><h3>Flat White</h3><p>Double ristretto · smooth microfoam</p></div><span class="menu-buy"><span class="price">₹200</span><button class="add-item" data-name="Flat White" data-price="200" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1578374173701-4b4a8e0c1c7c?auto=format&fit=crop&w=240&q=85" alt="Dark Mocha" loading="lazy"><span></span></div><div class="menu-copy"><small>HOT · CHOCOLATE</small><h3>Dark Mocha</h3><p>Espresso · dark chocolate · steamed milk</p></div><span class="menu-buy"><span class="price">₹230</span><button class="add-item" data-name="Dark Mocha" data-price="230" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=240&q=85" alt="Caramel Macchiato" loading="lazy"><span></span></div><div class="menu-copy"><small>HOT · CARAMEL</small><h3>Caramel Macchiato</h3><p>Espresso · vanilla · caramel drizzle · foam</p></div><span class="menu-buy"><span class="price">₹240</span><button class="add-item" data-name="Caramel Macchiato" data-price="240" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&w=240&q=85" alt="Americano" loading="lazy"><span></span></div><div class="menu-copy"><small>HOT · SIMPLE</small><h3>Americano</h3><p>Double espresso · hot water · clean finish</p></div><span class="menu-buy"><span class="price">₹160</span><button class="add-item" data-name="Americano" data-price="160" type="button">+ Add</button></span></div>
+</div>
+<div class="menu-category"><span>02</span><h3>Cold &amp; Iced</h3><em>Bright, chilled and made for slow afternoons.</em></div>
+<div class="menu-grid rich-menu">
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=240&q=85" alt="Classic Cold Brew" loading="lazy"><span></span></div><div class="menu-copy"><small>COLD · SIGNATURE</small><h3>Classic Cold Brew</h3><p>Slow-steeped coffee · chilled · naturally sweet</p></div><span class="menu-buy"><span class="price">₹200</span><button class="add-item" data-name="Classic Cold Brew" data-price="200" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=240&q=85" alt="Iced Spanish Latte" loading="lazy"><span></span></div><div class="menu-copy"><small>COLD · CREAMY</small><h3>Iced Spanish Latte</h3><p>Espresso · condensed milk · chilled milk</p></div><span class="menu-buy"><span class="price">₹240</span><button class="add-item" data-name="Iced Spanish Latte" data-price="240" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=240&q=85" alt="Iced Caramel Latte" loading="lazy"><span></span></div><div class="menu-copy"><small>COLD · CARAMEL</small><h3>Iced Caramel Latte</h3><p>Espresso · caramel · cold milk · ice</p></div><span class="menu-buy"><span class="price">₹230</span><button class="add-item" data-name="Iced Caramel Latte" data-price="230" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?auto=format&fit=crop&w=240&q=85" alt="Iced Mocha" loading="lazy"><span></span></div><div class="menu-copy"><small>COLD · CHOCOLATE</small><h3>Iced Mocha</h3><p>Dark chocolate · espresso · milk · ice</p></div><span class="menu-buy"><span class="price">₹240</span><button class="add-item" data-name="Iced Mocha" data-price="240" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=240&q=85" alt="Mocha Frappe" loading="lazy"><span></span></div><div class="menu-copy"><small>BLENDED</small><h3>Mocha Frappe</h3><p>Cold coffee · chocolate · milk · soft cream</p></div><span class="menu-buy"><span class="price">₹250</span><button class="add-item" data-name="Mocha Frappe" data-price="250" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1579888071069-c107a6f79d8d?auto=format&fit=crop&w=240&q=85" alt="Vanilla Coffee Frappe" loading="lazy"><span></span></div><div class="menu-copy"><small>BLENDED</small><h3>Vanilla Coffee Frappe</h3><p>Cold espresso · vanilla · milk · crushed ice</p></div><span class="menu-buy"><span class="price">₹245</span><button class="add-item" data-name="Vanilla Coffee Frappe" data-price="245" type="button">+ Add</button></span></div>
+</div>
+<div class="menu-category"><span>03</span><h3>Tea, Matcha &amp; Refreshers</h3><em>Not everything beautiful has to begin with coffee.</em></div>
+<div class="menu-grid rich-menu">
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=240&q=85" alt="Iced Matcha Latte" loading="lazy"><span></span></div><div class="menu-copy"><small>MATCHA · CREAMY</small><h3>Iced Matcha Latte</h3><p>Japanese-style matcha · oat milk · ice</p></div><span class="menu-buy"><span class="price">₹230</span><button class="add-item" data-name="Iced Matcha Latte" data-price="230" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=240&q=85" alt="Strawberry Matcha" loading="lazy"><span></span></div><div class="menu-copy"><small>MATCHA · SIGNATURE</small><h3>Strawberry Matcha</h3><p>Matcha · strawberry puree · cold milk</p></div><span class="menu-buy"><span class="price">₹260</span><button class="add-item" data-name="Strawberry Matcha" data-price="260" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=240&q=85" alt="Rose Hibiscus Iced Tea" loading="lazy"><span></span></div><div class="menu-copy"><small>TEA · FLORAL</small><h3>Rose Hibiscus Iced Tea</h3><p>Hibiscus · rose · citrus · sparkling finish</p></div><span class="menu-buy"><span class="price">₹190</span><button class="add-item" data-name="Rose Hibiscus Iced Tea" data-price="190" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=240&q=85" alt="Earl Grey Latte" loading="lazy"><span></span></div><div class="menu-copy"><small>TEA · CLASSIC</small><h3>Earl Grey Latte</h3><p>Bergamot black tea · steamed milk · honey</p></div><span class="menu-buy"><span class="price">₹190</span><button class="add-item" data-name="Earl Grey Latte" data-price="190" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=240&q=85" alt="Peach Citrus Cooler" loading="lazy"><span></span></div><div class="menu-copy"><small>REFRESHER</small><h3>Peach Citrus Cooler</h3><p>Peach · orange · lemon · sparkling water</p></div><span class="menu-buy"><span class="price">₹210</span><button class="add-item" data-name="Peach Citrus Cooler" data-price="210" type="button">+ Add</button></span></div>
+<div class="menu-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=240&q=85" alt="Berry Mint Fizz" loading="lazy"><span></span></div><div class="menu-copy"><small>REFRESHER</small><h3>Berry Mint Fizz</h3><p>Mixed berries · mint · lime · soda</p></div><span class="menu-buy"><span class="price">₹220</span><button class="add-item" data-name="Berry Mint Fizz" data-price="220" type="button">+ Add</button></span></div>
+</div>
+<div class="menu-category"><span>04</span><h3>Breakfast &amp; Savoury</h3><em>Come hungry. Stay a little longer.</em></div>
+<div class="menu-grid rich-menu">
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=240&q=85" alt="Avocado Sourdough Toast" loading="lazy"><span></span></div><div class="menu-copy"><small>ALL DAY</small><h3>Avocado Sourdough Toast</h3><p>Smashed avocado · feta · chilli flakes · lemon</p></div><span class="menu-buy"><span class="price">₹280</span><button class="add-item" data-name="Avocado Sourdough Toast" data-price="280" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=240&q=85" alt="Truffle Mushroom Toast" loading="lazy"><span></span></div><div class="menu-copy"><small>ALL DAY</small><h3>Truffle Mushroom Toast</h3><p>Sautéed mushrooms · herbs · parmesan · sourdough</p></div><span class="menu-buy"><span class="price">₹300</span><button class="add-item" data-name="Truffle Mushroom Toast" data-price="300" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=240&q=85" alt="ÉLAN Breakfast Plate" loading="lazy"><span></span></div><div class="menu-copy"><small>BREAKFAST</small><h3>ÉLAN Breakfast Plate</h3><p>Eggs · toast · roasted tomato · greens · potatoes</p></div><span class="menu-buy"><span class="price">₹320</span><button class="add-item" data-name="ÉLAN Breakfast Plate" data-price="320" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=240&q=85" alt="French Toast" loading="lazy"><span></span></div><div class="menu-copy"><small>BRUNCH</small><h3>French Toast</h3><p>Brioche · berries · maple · whipped mascarpone</p></div><span class="menu-buy"><span class="price">₹290</span><button class="add-item" data-name="French Toast" data-price="290" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=240&q=85" alt="Garden Pesto Sandwich" loading="lazy"><span></span></div><div class="menu-copy"><small>LIGHT</small><h3>Garden Pesto Sandwich</h3><p>Roasted vegetables · pesto · mozzarella · focaccia</p></div><span class="menu-buy"><span class="price">₹260</span><button class="add-item" data-name="Garden Pesto Sandwich" data-price="260" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=240&q=85" alt="Grilled Cheese & Tomato" loading="lazy"><span></span></div><div class="menu-copy"><small>LIGHT</small><h3>Grilled Cheese &amp; Tomato</h3><p>Sourdough · three-cheese blend · tomato soup</p></div><span class="menu-buy"><span class="price">₹270</span><button class="add-item" data-name="Grilled Cheese &amp; Tomato" data-price="270" type="button">+ Add</button></span></div>
+</div>
+<div class="menu-category"><span>05</span><h3>Bakery &amp; Sweet Things</h3><em>Baked in small batches, best enjoyed warm.</em></div>
+<div class="menu-grid rich-menu">
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=240&q=85" alt="Butter Croissant" loading="lazy"><span></span></div><div class="menu-copy"><small>BAKED DAILY</small><h3>Butter Croissant</h3><p>Classic laminated pastry · crisp outside · soft centre</p></div><span class="menu-buy"><span class="price">₹150</span><button class="add-item" data-name="Butter Croissant" data-price="150" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=240&q=85" alt="Almond Croissant" loading="lazy"><span></span></div><div class="menu-copy"><small>BAKED DAILY</small><h3>Almond Croissant</h3><p>Frangipane · toasted almonds · icing sugar</p></div><span class="menu-buy"><span class="price">₹190</span><button class="add-item" data-name="Almond Croissant" data-price="190" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=240&q=85" alt="Cinnamon Roll" loading="lazy"><span></span></div><div class="menu-copy"><small>BAKED DAILY</small><h3>Cinnamon Roll</h3><p>Brown sugar · cinnamon · vanilla glaze</p></div><span class="menu-buy"><span class="price">₹180</span><button class="add-item" data-name="Cinnamon Roll" data-price="180" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=240&q=85" alt="Basque Cheesecake" loading="lazy"><span></span></div><div class="menu-copy"><small>CAKE</small><h3>Basque Cheesecake</h3><p>Caramelised top · creamy centre · berry compote</p></div><span class="menu-buy"><span class="price">₹240</span><button class="add-item" data-name="Basque Cheesecake" data-price="240" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=240&q=85" alt="Chocolate Tart" loading="lazy"><span></span></div><div class="menu-copy"><small>DESSERT</small><h3>Chocolate Tart</h3><p>Dark chocolate ganache · sea salt · cocoa crumb</p></div><span class="menu-buy"><span class="price">₹220</span><button class="add-item" data-name="Chocolate Tart" data-price="220" type="button">+ Add</button></span></div>
+<div class="menu-item food-item"><div class="menu-thumb"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=240&q=85" alt="ÉLAN Cookie" loading="lazy"><span></span></div><div class="menu-copy"><small>SMALL BITE</small><h3>ÉLAN Cookie</h3><p>Brown butter · dark chocolate · flaky salt</p></div><span class="menu-buy"><span class="price">₹130</span><button class="add-item" data-name="ÉLAN Cookie" data-price="130" type="button">+ Add</button></span></div>
+</div>
+<div class="menu-note"><span>✦</span> Vegetarian-friendly options are available. Ask our team about today's fresh bakes and seasonal specials.</div>
+</div>
+</section>
+<section class="section workshop-band" id="workshops">
+<div class="container">
+<div class="workshop-kicker">HANDS-ON AT ÉLAN</div>
+<div class="workshop-title-row">
+<div><h2>Make. Learn.<br/><i>Take it home.</i></h2></div>
+<p>Small creative sessions hosted on selected weekends. Choose a craft, meet the team and make something you can actually take home.</p>
+</div>
+<div class="workshop-list">
+<div class="workshop"><div class="workshop-top"><span>01 · SATURDAY</span><b>🥐</b></div><h3>Croissant Lab</h3><p>Fold, shape and bake a buttery croissant with our pastry team.</p><a href="contact.html#reserve">Book a spot →</a></div>
+<div class="workshop"><div class="workshop-top"><span>02 · SUNDAY</span><b>♡</b></div><h3>Latte Art 101</h3><p>Learn milk texture, pouring technique and your first heart or rosetta.</p><a href="contact.html#reserve">Book a spot →</a></div>
+<div class="workshop"><div class="workshop-top"><span>03 · EVENING</span><b>☕</b></div><h3>Coffee Tasting</h3><p>Compare three beans, discover origin notes and build your own tasting vocabulary.</p><a href="contact.html#reserve">Book a spot →</a></div>
+</div>
+<div class="workshop-cta"><a class="btn" href="contact.html#reserve">Enquire about a workshop →</a><span>Limited seats · Beginner friendly</span></div>
+</div>
+</section>
+<!-- Shopping bag -->
+<aside aria-hidden="true" class="cart-drawer" id="cartDrawer">
+<div class="cart-head"><div><span class="eyebrow">YOUR ÉLAN BAG</span><h2>Your order.</h2></div><button class="cart-close" id="cartClose">×</button></div>
+<div class="cart-items" id="cartItems"><div class="empty-cart">Your bag is waiting.<br/>Add something delicious.</div></div>
+<div class="cart-bottom">
+<div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+<button class="btn checkout-open" id="checkoutOpen">Continue to checkout →</button>
+</div>
+</aside>
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<button aria-label="Open shopping bag" class="floating-bag" id="floatingBag">Bag <b id="cartCount">0</b></button>
+<!-- Checkout + demo payment -->
+<div aria-hidden="true" class="checkout-modal" id="checkoutModal">
+<div class="checkout-card">
+<button class="checkout-close" id="checkoutClose">×</button>
+<div class="checkout-left">
+<p class="eyebrow">ÉLAN checkout</p><h2>Almost<br/>there.</h2>
+<div class="checkout-summary" id="checkoutSummary"></div>
+<div class="checkout-grand"><span>Total</span><strong id="checkoutTotal">₹0</strong></div>
+</div>
+<form class="payment-form" id="paymentForm">
+<p class="eyebrow">Payment details</p>
+<h3>Secure demo checkout</h3>
+<div class="pay-methods">
+<button class="pay-method active" data-method="Card" type="button">Card</button>
+<button class="pay-method" data-method="UPI" type="button">UPI</button>
+<button class="pay-method" data-method="Cash" type="button">Pay at café</button>
+</div>
+<div id="cardFields">
+<label>NAME ON CARD<input name="cardName" placeholder="Your name" required=""/></label>
+<label>CARD NUMBER<input inputmode="numeric" maxlength="19" name="cardNumber" placeholder="1234 5678 9012 3456" required=""/></label>
+<div class="pay-row"><label>EXPIRY<input placeholder="MM / YY" required=""/></label><label>CVV<input inputmode="numeric" maxlength="3" placeholder="•••" required=""/></label></div>
+</div>
+<div id="upiFields" style="display:none"><label>UPI ID<input placeholder="yourname@upi"/></label></div>
+<div id="cashFields" style="display:none"><div class="cash-note">You'll pay at the counter when you arrive. Your order will be prepared after confirmation.</div></div>
+<button class="btn pay-now" type="submit">Pay &amp; place order →</button>
+<small class="demo-note">Demo payment only · No real money is charged.</small>
+</form>
+</div>
+</div>
+<div aria-hidden="true" class="order-success" id="orderSuccess">
+<div class="order-success-card">
+<div class="success-mark">✓</div><p class="eyebrow">ORDER CONFIRMED</p>
+<h2>Thank you.</h2>
+<p>Your ÉLAN order has been placed successfully.</p>
+<strong id="orderNumber"></strong>
+<button class="btn" id="orderDone">Back to menu →</button>
+</div>
+</div>
+<footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html">ÉLAN<small>CAFÉ · COFFEE · BAKERY</small></a><p>A neighborhood café for slow mornings, thoughtful conversations and beautifully made coffee.</p></div><div><h4>Explore</h4><a href="index.html">Home</a><a href="about.html">Our Story</a><a href="services.html">Menu &amp; Services</a><a href="contact.html">Contact</a></div><div><h4>Visit</h4><a href="contact.html">Mangalore, Karnataka</a><a href="contact.html">Mon–Sun · 8:00 AM–10:00 PM</a><a href="contact.html#reserve">Reserve a Table</a></div></div><div class="container footer-bottom">© 2026 ÉLAN Café. Crafted for good coffee &amp; good company.</div></footer>
+<script src="js/script.js"></script></body></html>
