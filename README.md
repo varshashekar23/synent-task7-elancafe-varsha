@@ -5,3 +5,6 @@
 - Gallery images have a fallback source if an external image fails.
 - Home gallery background cards also get an image fallback.
 - Ordering, checkout, demo payment and confirmation remain intact.
+## Accessibility
+
+Navigation landmarks are labelled to improve accessibility and screen-reader navigation.
